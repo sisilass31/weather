@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Météo</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="searchbar-container">
+            <input type="search" placeholder="Rechercher un ville" class="search-input">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </section>
+        <section class="meteo-infos" style="display: none ;">
+            <div class="location-container">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4 class="ville-text">Paris</h4>
+                </div>
+                <h5 class="date-text fw-400">Mardi 7 Juin</h5>
+            </div>
+            <div class="meteo-summary-container">
+                <div class="summary-icon">
+                    <img src="./img/icon/sun_cloud.png" alt="">
+                </div>
+                <div class="summary-info">
+                    <h1 class="temperature-text">16 °C</h1>
+                    <h3 class="condition-text fw-400">Clouds</h3>
+                </div>
+            </div>
+            <div class="meteo-conditions-container">
+                <div class="condition-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="condition-info">
+                        <h5 class="fw-400">Humidité</h5>
+                        <h5 class="humidite-text">81%</h5>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="condition-info">
+                        <h5 class="fw-400">Vent </h5>
+                        <h5 class="humidite-text">8km/h</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="previsions-container">
+                <div class="prevision-item">
+                    <h5 class="prevision-item-date fw-400">5 Juin</h5>
+                    <div class="icon-previsions">
+                        <img src="./img/icon/sun_cloud_wind.png" alt="rain">
+                    </div>
+                    <h5 class="prevision-item-temp">23 °C</h5>
+                </div>
+                <div class="prevision-item">
+                    <h5 class="prevision-item-date fw-400">5 Juin</h5>
+                    <div class="icon-previsions">
+                        <img src="./img/icon/sun_cloud_wind.png" alt="rain">
+                    </div>
+                    <h5 class="prevision-item-temp">23 °C</h5>
+                </div>
+                <div class="prevision-item">
+                    <h5 class="prevision-item-date fw-400">5 Juin</h5>
+                    <div class="icon-previsions">
+                        <img src="./img/icon/sun_cloud_wind.png" alt="rain">
+                    </div>
+                    <h5 class="prevision-item-temp">23 °C</h5>
+                </div>
+                <div class="prevision-item">
+                    <h5 class="prevision-item-date fw-400">5 Juin</h5>
+                    <div class="icon-previsions">
+                        <img src="./img/icon/sun_cloud_wind.png" alt="rain">
+                    </div>
+                    <h5 class="prevision-item-temp">23 °C</h5>
+                </div>
+                <div class="prevision-item">
+                    <h5 class="prevision-item-date fw-400">5 Juin</h5>
+                    <div class="icon-previsions">
+                        <img src="./img/icon/sun_cloud_wind.png" alt="rain">
+                    </div>
+                    <h5 class="prevision-item-temp">23 °C</h5>
+                </div>
+            </div>
+        </section>
+        <section class="search-ville message">
+            <div class="img-message-search">
+                <img src="./img/search.png" alt="search">
+            </div>
+            <div class="search-message-text">
+                <h1>Rechercher une ville</h1>
+                <h4 class="fw-400">Découvrez la météo actuelle et les prévisions pour votre ville!</h4>
+            </div>
+        </section>
+        <section class="erreur404 message" style="display: none ;">
+            <div class="img-message-search">
+                <img src="./img/404.png" alt="404">
+            </div>
+            <div class="search-message-text">
+                <h1>Oups! </h1>
+                <h4 class="fw-400">Ville introuvable. La ressource demandée est inaccessible ou n'existe pas.</h4>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

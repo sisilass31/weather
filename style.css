@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: all 200ms ease;
+  color: var(--white);
+}
+
+:root {
+  --white: #ffffff;
+  --light-white: #ffffff3d;
+  --light-black: #0000007b;
+  --light-grey: #00000027;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: var(--light-black);
+}
+
+.main {
+  width: 300px;
+  height: 500px;
+  backdrop-filter: blur(100px);
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 25px;
+}
+
+/* searchbar */
+
+.searchbar-container {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.search-input {
+  outline: none;
+  background-color: var(--light-grey);
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding-right: 30px;
+}
+
+.search-input:focus {
+  border: 2px solid var(--light-black);
+}
+
+.search-btn {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+}
+
+/* searchbar */
+
+/* meteo info */
+
+.meteo-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* meteo info */
+
+/* summary */
+
+.meteo-summary-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.summary-icon img {
+  width: 100%;
+}
+
+.condition-text {
+  text-align: end;
+}
+
+.meteo-conditions-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.condition-item i {
+  font-size: 20px;
+}
+
+/* summary */
+
+/* prevision */
+
+.previsions-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  padding-bottom: 12px;
+}
+
+/* chrome, safari */
+.previsions-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.previsions-container::-webkit-scrollbar-track {
+  background: var(--light-white);
+  border-radius: 99px;
+}
+
+.previsions-container::-webkit-scrollbar-thumb {
+  background: var(--light-white);
+  border-radius: 99px;
+}
+
+/* firefox */
+.previsions-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-white) var(--light-grey);
+}
+
+/* internet explorer, edge */
+.previsions-container {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.prevision-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 80px;
+  background-color: var(--light-white);
+}
+
+.icon-previsions {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-previsions img {
+  width: 100%;
+}
+/* prevision */
+
+/* meteo info */
+
+/* message search */
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.img-message-search {
+  width: 80%;
+}
+
+.img-message-search img {
+  width: 100%;
+}
+
+.search-message-text {
+  text-align: center;
+}
+
+.search-message-text h1 {
+  font-size: 20px;
+}
+
+.search-message-text h4 {
+  font-size: 14px;
+}
+/* message search */
